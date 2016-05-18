@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Arimo", sans-serif;
+    color: #767676;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/******** GENERAL ********/
+html, body {
+    width: 100%;
+}
+button {
+    cursor: pointer;
+}
+button, button:hover, button:active {
+    border: none;
+    outline: none;
+}
+.block-content {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.block-content:after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+/******** END OF GENERAL ********/
+
+/******** HEADER (top, bottom, slider) ********/
+.header-top {
+    background: #f7f7f7;
+    padding: 25px 0;
+}
+.logo {
+    width: 200px;
+    height: 47px;
+    overflow: hidden;
+    float: left;
+}
+.block-callback {
+    height: 47px;
+    float: right;
+}
+.block-phones {
+    display: inline-block;
+    vertical-align: middle;
+}
+.block-phones p {
+    font-size: 18px;
+    line-height: 23px;
+}
+.get-callback {
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+    height: 38px;
+    line-height: 1;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #282c37;
+    margin-left: 20px;
+    border: 1px solid #282c37;
+}
+.get-callback:hover {
+    border: 1px solid #282c37;
+    color: #282c37;
+    background: transparent;
+}
+.get-callback:active {
+    border: 1px solid transparent;
+}
+.header-bottom {
+    background: #282c37;
+    padding: 35px 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 100px;
+    position: relative;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li:after {
+    content: '';
+    display: inline-block;
+    height: 16px;
+    border-right: 1px solid #424757;
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+}
+nav ul li:last-child:after {
+    display: none;
+}
+nav ul li a {
+    font-size: 15px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.slider {
+    width: 100%;
+    position: relative;
+}
+.slick-dots {
+    width: 100px;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.slick-dots li {
+    display: inline-block;
+}
+.slick-dots li:nth-child(2) button {
+    margin: 0 15px;
+}
+.slick-dots li button {
+    width: 15px;
+    height: 15px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    font-size: 0;
+    color: transparent;
+    background: #9e8e6e;
+}
+.slick-dots .slick-active button{
+    background: #ffffff;
+}
+/******** END OF HEADER ********/
+
+/******** CONTENT ********/
+
+/******** END OF CONTENT ********/
+.breadcrumbs {
+    padding: 40px 0;
+}
+.breadcrumbs li {
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+}
+.breadcrumbs li:last-child {
+    margin-right: 0;
+}
+.breadcrumbs li:after {
+    display: inline-block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 5px solid #282c37;
+    border-bottom: 4px solid transparent;
+    position: absolute;
+    top: 5px;
+    right: -20px;
+}
+.breadcrumbs li:last-child:after {
+    display: none;
+}
+.breadcrumbs li a {
+    color: #282c37;
+    line-height: 1;
+}
+.content-left {
+    width: 200px;
+    float: left;
+}
+.catalog-menu {margin-bottom: 50px;}
+.catalog-menu>li {
+    display: block;
+    margin-bottom: 10px;
+}
+.sub-menu {
+    display: none;
+    margin-top: 10px;
+}
+.category-name {
+    font-size: 16px;
+}
+.catalog-menu>.active .category-name {
+    font-size: 18px;
+    color: #282c37;
+}
+.catalog-menu>.active .sub-menu {
+    display: inherit;
+}
+.sub-menu li {
+    list-style: disc;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.sub-menu .active a {
+    color: #282c37;
+    text-decoration: underline;
+}
+.field-download {
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 40px;
+    background: transparent url('../images/icon-download.png') no-repeat center;
+    background-size: cover;
+    margin-right: 15px;
+}
+.field-download-label {
+    display: inline-block;
+    vertical-align: middle;
+    color: #282c37;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.content-center {
+    width: 750px;
+    float: right;
+    text-align: center;
+}
+.content-center ul {
+    text-align: justify;
+    text-align-last: justify;
+}
+.content-center ul:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.product-card {
+    display: inline-block;
+    width: 240px;
+    border: 1px solid #e4e4e4;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.product-image {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    margin: 10px auto 15px;
+    background: #f7f7f7;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.product-image img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.product-info {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.4;
+    word-spacing: 5px;
+    padding: 0 15px 10px;
+}
+.order-block {
+    border-top: 1px solid #e4e4e4;
+    padding: 10px 15px;
+}
+.order-block:after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.product-cost {
+    color: #444444;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 700;
+    float: left;
+}
+.product-cost:before {
+    content: '$';
+    color: #444444;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.to-buy {
+    width: 28px;
+    height: 21px;
+    background: transparent url('../images/icon-basket.png') no-repeat center;
+    background-size: cover;
+    margin-top: 5px;
+    float: right;
+}
+.nav-pages {
+    display: inline-block;
+}
+.nav-pages li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.nav-pages .active a {
+    font-size: 18px;
+    color: #444444;
+}
+.nav-pages .active a:hover {
+    color: #444444;
+}
+.promo-texts {
+    margin-top: 25px;
+    border-top: 1px solid #777777;
+    padding: 40px 0 80px;
+}
+.promo-texts p {
+    display: inline-block;
+    width: 47%;
+    margin-right: 2%;
+    text-align: left;
+    line-height: 1.4;
+}
+/******** FOOTER ********/
+.footer {
+    padding: 40px 0 130px;
+    border-top: 1px solid #e4e4e4;
+}
+.copyrights {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+.footer-nav {
+    width: 65%;
+    float: right;
+    text-align: justify;
+    text-align-last: justify;
+}
+.footer-nav ul:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+}
+.footer-nav li {
+    display: inline-block;
+}
+.footer-nav ul li a {
+    text-transform: uppercase;
+}
+/******** END OF FOOTER ********/
+
+/******** MEDIA QUERIES ********/
+@media (max-width: 980px) {
+    .content-left {
+        display: inline-block;
+        vertical-align: top;
+        float: none;
+    }
+    .content-center {
+        display: inline-block;
+        vertical-align: top;
+        width: 500px;
+        float: none;
+        margin-left: 30px;
+    }
+    nav ul li, nav ul li:last-child {
+        margin: 0 20px 20px;
+    }
+    nav ul li:after, nav ul li:last-child:after {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .content-center {
+        display: block;
+        width: 100%;
+        margin: 30px auto 0;
+    }
+    .content-center ul {
+        text-align: center;
+    }
+    .copyrights, .footer-nav {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .footer-nav ul {
+        text-align: center;
+    }
+    .footer-nav ul li  {
+        margin: 10px 20px;
+    }
+    .promo-texts p {
+        display: inline-block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 540px) {
+    .header-top {
+        text-align: center;
+    }
+    .logo, .block-callback {
+        float: none;
+        display: inline-block;
+        margin: 10px 20px;
+    }
+    .logo, .block-callback {
+        margin: 10px 0;
+    }
+}
+@media (max-width: 360px) {
+
+}
+/******** END OF MEDIA QUERIES ********/
